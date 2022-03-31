@@ -8,9 +8,9 @@ Delete User {"id":"1"}
 
 
 
-    POST("/create", h.createNewUser)
-		POST("/make_friends", h.makeFriends)
-		GET("/", h.getAllUser)
-		GET("/friends/:id", h.getUserByID)
-		PUT("/age_updated/:id", h.updateUser)
-		DELETE("/delete/:id", h.deleteUser)
+POST("/create", h.createNewUser)
+POST("/make_friends", h.makeFriends)
+GET("/", h.getAllUser)
+GET("/friends/:id", h.getUserByID)
+PUT("/age_updated/:id", h.updateUser)
+DELETE("/delete/:id", h.deleteUser)
