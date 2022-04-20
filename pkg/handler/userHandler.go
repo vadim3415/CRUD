@@ -2,7 +2,6 @@ package handler
 
 import (
 	"HTTP31/pkg/model"
-	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"strconv"
@@ -82,7 +81,6 @@ func (h *Handler) updateUser(c *gin.Context) {
 		newErrorResponse(c, http.StatusBadRequest, err.Error())
 		return
 	}
-	fmt.Println(input.NewAge)
 
 	UpdateId, err := h.services.UpdateUser(id, input)
 	if err != nil {
@@ -112,4 +110,3 @@ func (h *Handler) deleteUser(c *gin.Context) {
 		"use delete, id": deleteId,
 	})
 }
-
