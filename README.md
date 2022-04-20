@@ -8,10 +8,15 @@
 4) psql -U postgres
 
 5) CREATE TABLE users (
+
 id serial not null unique,
+
 name VARCHAR (50) not null unique,
+
 age VARCHAR (50) not null,
+
 friends text[]
+
 );
 
 6) see table
